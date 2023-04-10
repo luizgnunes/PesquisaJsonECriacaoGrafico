@@ -92,7 +92,6 @@ def plotar_vendas(dataset_manager):
                 GROUP BY brand
                 ORDER BY vendas_por_marca_u6m DESC
                 """
-    # Query the sales data
     df = dataset_manager.query_dataset(query)
 
     fig = px.bar(df,
